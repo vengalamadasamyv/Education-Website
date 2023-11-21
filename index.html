@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/943b27ad09.js" crossorigin="anonymous"></script>
+    <title>Static Bootstrap Website</title>
+    <style>
+      html{
+        scroll-behavior: smooth;
+      }
+    </style>
+</head>
+<body>
+    <!-- nav bar -->
+    <!-- media screen -->
+    <nav class="navbar w-100 d-inline-block d-lg-none navbar-light bg-light" id="home" style="position:sticky; top: 0; z-index: 98;">
+  <div class="container-fluid">
+    <div class="w-100 d-flex justify-content-between align-items-center">
+    <img src="./image/website image/navimg-removebg-preview.png" width="160" height="60" class="object-fit-cover">
+    <button class="navbar-toggler h-25" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+      <i class="fa-solid fa-bars"></i>
+    </button>
+    </div>
+    <div class="collapse navbar-collapse text-center" id="navbarTogglerDemo01">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#home">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#about">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#programs">Programs</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#topstory">Blog</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#footer">Contact</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+    <!-- normal -->
+    <nav class="navbar navbar-light bg-white d-none d-lg-inline w-100" id="home" style="position:fixed; top: 0; z-index: 99;">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <img src="./image/website image/navimg-removebg-preview.png" alt="university" width="160" height="60" class="d-inline-block align-text-center object-fit-cover">
+          </a>
+          <section class="fs-3 d-flex gap-5">
+            <a href="#home" class="text-decoration-none text-black">Home</a>
+            <a href="#about" class="text-decoration-none text-black">About</a>
+            <a href="#programs" class="text-decoration-none text-black">Programs</a>
+            <a href="#topstory" class="text-decoration-none text-black">Blog</a>
+            <a href="#footer" class="text-decoration-none text-black">Contact</a>
+          </section>
+          <section>
+            <p class="fs-5"><span class="color-danger">Call Us : </span>0(78) 675 4373</p>
+            <div class="d-flex gap-3 fs-3">
+                <i class="fa-brands fa-square-facebook" style="color: royalblue;"></i>
+                <i class="fa-brands fa-square-twitter" style="color: dodgerblue;"></i>
+                <i class="fa-brands fa-linkedin" style="color: royalblue;"></i>
+                <i class="fa-brands fa-square-youtube" style="color: #f9010e;"></i>
+                <i class="fa-solid fa-envelope" style="color: #17b602;"></i>
+            </div>
+          </section>
+        </div>
+      </nav>
+      <!-- crouseal -->
+      <div id="carouselExampleCaptions" style="height:550px;" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="./image/website image/home_bg1 (2).jpg" class="d-block w-100 mt-1" style="height:550px" alt="Img 1">
+            <div class="carousel-caption d-none d-md-block" style="font-size: 26px; font-weight: 800;">
+              <h5>Sports Competition in University</h5>
+              <p>Whereas of the content for the first slide.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="./image/website image/home_bg1 (1).jpg" class="d-block w-100 mt-1" style="height:550px" alt="Img 2">
+            <div class="carousel-caption d-none d-md-block" style="font-size: 26px; font-weight: 800;">
+              <h5>Boston University</h5>
+              <p>Some representative placeholder the yet of these canteen.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="./image/website image/home_bg.jpg" class="d-block w-100 mt-1" style="height:550px" alt="Img 3">
+            <div class="carousel-caption d-none d-md-block" style="font-size: 26px; font-weight: 800;">
+              <h5>School of University</h5>
+              <p>This make a better opportunity in the campus of requirement. </p>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+                        <!-- comprehensive -->
+      <div class="w-85 h-50 p-5 m-5" style="background-color: wheat;" id="about">
+        <div class="d-flex flex-column flex-lg-row gap-4">
+          <section class="w-100 w-lg-50">
+            <img src="./image/website image/comprehensive.jpg" class="w-100 h-100" alt="Company">
+          </section>
+          <section class="d-flex flex-column w-100 w-lg-50">
+            <p class="fw-bold fs-3">A COMPREHENSIVE TEACHING APPROACH</p>
+            <article class="fs-5 mt-2">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Suscipit doloribus maiores, saepe sequi, corrupti voluptas corporis, exercitationem explicabo quo maxime hic sint quidem mollitia quam. Iure eligendi veritatis nihil tempora!
+              Nisi ipsum magni, corporis inventore voluptas hic quis earum quia a suscipit. Eum laudantium asperiores iusto unde impedit ad repellat facere perspiciatis!
+            </article>
+            <article class="fs-5 mt-4">
+              Veniam unde, minima ullam eligendi dolore sint dolores optio! Voluptatem, iste quam? Iusto,
+              Reprehenderit et aut voluptate! Voluptatem corrupti autem dolore aliquam sint, officia nihil nisi iure, eius expedita iste accusamus doloremque, ad cupiditate. Amet, consectetur adipisicing elit. Blanditiis ex vel magnam ad omnis, voluptate possimus non impedit fugiat praesentium ut eaque fuga nesciunt sunt! Quae explicabo dolore in placeat!
+            </article>
+          </section>
+        </div>
+      </div>
+      <!-- program -->
+      <div class="w-100 h-25 d-flex flex-column justify-content-center align-items-center" id="programs">
+        <p class="fs-3 fw-bold">PROGRAM WE OFFER</p>
+        <p class="w-50 text-center fs-5">Velit ducimus iste accusantium eligendi labore consequatur dicta, iure officia vitae quasi reiciendis dolor repudiandae error illo possimus veniam. Sed, ab perspiciatis.</p>
+      </div>
+      <!-- program card -->
+      <section class="d-flex flex-wrap m-2 justify-content-center align-items-center gap-5">
+      <div class="card p-2" style="width: 28rem;">
+        <img src="./image/website image/program_science.jpg" class="card-img-top" alt="Science">
+        <div class="card-body">
+          <h5 class="card-title">Faculty of Science</h5>
+          <p class="card-text">Totam velit dicta ducimus porro magnam excepturi consequuntur nesciunt voluptatum impedit.</p>
+          <a href="#" class="btn btn-primary">Learn More</a>
+        </div>
+      </div>
+      <div class="card p-2" style="width: 28rem;">
+        <img src="./image/website image/program_arts.jpg" class="card-img-top" alt="Arts">
+        <div class="card-body">
+          <h5 class="card-title">Faculty of Arts</h5>
+          <p class="card-text">Totam velit dicta ducimus porro magnam excepturi consequuntur nesciunt voluptatum impedit.</p>
+          <a href="#" class="btn btn-primary">Learn More</a>
+        </div>
+      </div>
+      </section>
+      <!-- Essential Resource -->
+      <div class="w-85 d-flex flex-column flex-lg-row gap-3 p-3 mt-4">
+        <section class="d-flex w-100 flex-column gap-3 p-2">
+          <p class="fs-3 fw-bold">ESSENTIAL RESOURCES</p>
+          <p class="fs-5">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cupiditate, laudantium quasi. Eaque nemo suscipit, repellendus itaque.</p>
+          <div class="p-3 border border-1">
+            <p class="fw-bold fs-3">First Year Students</p>
+            <p>Integer efficular tellus meterve lit dicta ducimus porro magnam excepturi consequuntur massa.</p><button class="border-0 bg-primary fs-2 fw-bold h-10 w-100 text-white text-center"><i class="fa-solid fa-right-to-bracket"></i></button<i class="fa-solid fa-right-to-bracket"></i>
+          </div>
+          <div class="p-3 border border-1">
+            <p class="fw-bold fs-3">Tution & Fees</p>
+            <p>Integer efficular tellus meterve lit dicta ducimus porro magnam excepturi consequuntur massa.</p><button class="border-0 bg-primary fs-2 fw-bold h-10 w-100 text-white text-center"><i class="fa-solid fa-right-to-bracket"></i></button>
+          </div>
+          <div class="p-3 border border-1">
+            <p class="fw-bold fs-3">International Students</p>
+            <p>Integer efficular tellus meterve lit dicta ducimus porro magnam excepturi consequuntur massa.</p><button class="border-0 bg-primary fs-2 fw-bold h-10 w-100 text-white text-center"><i class="fa-solid fa-right-to-bracket"></i></button>
+          </div>
+        </section>
+        <section class="w-100" style="height:900px">
+          <img src="./image/website image/resource.jpg" class="w-100" style="height:900px">
+        </section>
+      </div>
+      <!-- Top Stories -->
+      <p class="fs-3 fw-bold mt-5 mb-3 ps-5 ms-5" id="topstory">TOP  STORIES</p>
+      <section class="d-flex flex-wrap gap-3 m-2 justify-content-center align-items-center">
+        <div class="card" style="width: 24rem;">
+          <img src="./image/website image/story-1.jpg" class="card-img-top" alt="story-1">
+          <div class="card-body">
+            <p class="card-text">Eveniet maiores doloremque tempore alias fuga laborum consequatur voluptatibus aut totam mollitia.</p>
+          </div>
+        </div>
+        <div class="card" style="width: 24rem;">
+          <img src="./image/website image/story-2.jpg" class="card-img-top" alt="stroy-2">
+          <div class="card-body">
+            <p class="card-text">Eveniet maiores doloremque tempore alias fuga laborum consequatur voluptatibus aut totam mollitia.</p>
+          </div>
+        </div>
+        <div class="card" style="width: 24rem;">
+          <img src="./image/website image/story-3.jpg" class="card-img-top" alt="story-3">
+          <div class="card-body">
+            <p class="card-text">Eveniet maiores doloremque tempore alias fuga laborum consequatur voluptatibus aut totam mollitia.</p>
+          </div>
+        </div>
+      </section>
+      <!-- partners -->
+      <div class="p-4 mt-5 mb-5">
+        <p class="fs-3 fw-bold text-center">OUR PARTNERS</p>
+        <p class="text-center">Rerum officiis dolore odio nemo modi a, libero sed, hic ut perferendis magnam quasi, tenetur ducimus saepe at amet deseruntam.</p>
+        <section class="w-100 d-flex gap-5 flex-wrap justify-content-center align-items-center">
+          <img src="./image/website image/cidb.png">
+          <img src="./image/website image/bunm.jfif">
+          <img src="./image/website image/haier.png">
+          <!-- <img src="./image/website image/syngenta.png"> -->
+          <img src="./image/website image/jj.png">
+        </section>
+      </div>
+      <!-- Join Us -->
+      <div class="d-flex flex-column flex-lg-row gap-3 m-2">
+        <section class="w-100">
+          <img src="./image/website image/trust-join.jpg" class="w-100 h-100">
+        </section>
+        <section class="w-100 text-center">
+          <p class="fs-3 fw-bold">TRUSTED BY OVER 6000+ STUDENTS</p>
+          <P class="mt-2">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsa reprehenderit adipisci accusantium maiores, natus quibusdam. Corrupti ea facere odio minima harum itaque a voluptatibus asperiores voluptatum. Est excepturi deserunt iusto?
+            Sit amet consectetur adipisicing elit. Blanditiis debitis ullam tenetur temporibus nemo reprehenderit ad praesentium illo sequi quia nesciunt est repellendus aliquam deserunt nisi, fuga iure incidunt sint.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique molestias quidem vel porro, quia laborum minus adipisci, officia, non suscipit illum ipsum. Veniam iusto eos, sint ipsa illum adipisci voluptas.
+          </P>
+          <p class="mt-2">Dolor sit amet consectetur adipisicing elit. Fugiat in distinctio soluta atque iusto. Tempora voluptas modi in commodi vitae, corrupti voluptatem aspernatur animi molestias suscipit quis nobis beatae nostrum!
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Id aliquid, nesciunt voluptas facilis ab corrupti quo facere aut quia eum vel molestias harum, tempora optio necessitatibus. Odio error eum voluptas?
+            Mollitia, perspiciatis aliquid. Voluptatum eum quia, qui obcaecati reiciendis cupiditate debitis! Laudantium harum distinctio neque autem ad? Fuga voluptatem officiis accusantium praesentium?
+          </p>
+          <button class="border border-primary bg-primary text-white mt-3 p-2">Join Now</button>
+        </section>
+      </div>
+      <!-- footer -->
+      <div class="d-flex flex-wrap gap-5 justify-content-center align-items-start pt-5 p-5" id="footer" style="background-color: wheat;">
+        <section class="h-100" style="margin-top:-82px">
+          <img src="./image/website image/navimg-removebg-preview.png">
+        </section>
+        <section class="d-flex flex-column">
+          <p class="fs-5 fw-bold">Quick Links</p>
+          <a>Work</a>
+          <a>Services</a>
+          <a>Products</a>
+          <a>Tips & Tricks</a>
+        </section>
+        <section class="d-flex flex-column">
+          <p class="fs-5 fw-bold">Programs</p>
+          <a>Air Freight</a>
+          <a>Ocean Freight</a>
+          <a>Large Projects</a>
+        </section>
+        <section class="d-flex flex-column">
+          <p class="fs-5 fw-bold">Resources</p>
+          <a>FAQ</a>
+          <a>Submit Tickets</a>
+          <a>Contact Us</a>
+        </section>
+        <section>
+          <p class="fs-5 fw-bold">Newsletter</p>
+          <p>Subscribe newsletter to get updates.</p>
+          <input type="email" placeholder="Enter Your Email..." class="mb-3 p-1">
+          <button class="bg-primary text-white fs-5"><i class="fa-solid fa-paper-plane"></i></button>
+          <p class="mt-1 fs-3 d-flex gap-3">
+            <a><i class="fa-brands fa-facebook" style="color:royalblue"></i></a>
+            <a><i class="fa-brands fa-instagram" style="color:crimson;"></i></a>
+            <a><i class="fa-brands fa-linkedin" style="color:blue"></i></a>
+            <a><i class="fa-brands fa-youtube" style="color:#f9010e"></i></a>
+          </p>
+        </section>
+      </div>
+      
+      <button class="border-top border-0 w-100 border-dark fs-3 fw-bold" style="background-color: wheat;">Created & &copy; by Vengalamadasamy V&#128516;</button>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>
+</html>
